@@ -4,6 +4,16 @@
  */
 package view;
 
+import javax.swing.JOptionPane;
+import view.contains.ViewThongKe;
+import view.contains.ViewSanPham;
+import view.contains.ViewKhachHang;
+import view.contains.ViewHoaDon;
+import view.contains.ViewHeThong;
+import view.contains.ViewBanHang;
+import javax.swing.JPanel;
+import view.model.NhanVienVM;
+
 
 
 
@@ -12,17 +22,14 @@ package view;
  * @author pc
  */
 public class PhanMemQLGiay extends javax.swing.JFrame {
+  private JPanel panel;
 
     
-    /**
-     * Creates new form ViewDuAn1
-     * @param  nv
-     */
+   
     public PhanMemQLGiay() {
-        
-        
-
-
+                initComponents();
+            panel = new ViewBanHang();
+        setPanel(panel);
     }
 
     /**
@@ -438,32 +445,42 @@ public class PhanMemQLGiay extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void setPanel() {
+    private void setPanel(JPanel p) {
+        jplContain.removeAll();
+        jplContain.add(p);
+        jplContain.updateUI();
+  
         
     }
     private void btnKhachHangActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnKhachHangActionPerformed
-        
+        panel = new ViewKhachHang();
+        setPanel(panel);
     }//GEN-LAST:event_btnKhachHangActionPerformed
 
     private void btnBanHangActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBanHangActionPerformed
-       
+       panel = new ViewBanHang();
+        setPanel(panel);
     }//GEN-LAST:event_btnBanHangActionPerformed
 
     private void btnSanPhamActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSanPhamActionPerformed
-        
+        panel = new ViewSanPham();
+        setPanel(panel);
     }//GEN-LAST:event_btnSanPhamActionPerformed
 
     private void btnHoaDonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHoaDonActionPerformed
-        
+        panel = new ViewHoaDon();
+        setPanel(panel);
     }//GEN-LAST:event_btnHoaDonActionPerformed
 
     private void btnThongKeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnThongKeActionPerformed
-        
+        panel = new ViewThongKe();
+        setPanel(panel);
         
     }//GEN-LAST:event_btnThongKeActionPerformed
 
     private void btnHeThongActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHeThongActionPerformed
-       
+       panel = new ViewHeThong();
+        setPanel(panel);
     }//GEN-LAST:event_btnHeThongActionPerformed
 
     private void btnDoiMatKhauActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDoiMatKhauActionPerformed
@@ -480,18 +497,28 @@ public class PhanMemQLGiay extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void btnThoatActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnThoatActionPerformed
-        
+        int hoi = JOptionPane.showConfirmDialog(this, "Bạn có muốn thoát không ?");
+        if (hoi == JOptionPane.YES_OPTION) {
+            System.exit(0);
+        }
     }//GEN-LAST:event_btnThoatActionPerformed
 
     private void btnDangxuatActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDangxuatActionPerformed
-        
+        int hoi = JOptionPane.showConfirmDialog(this, "Bạn có muốn đăng xuất không ?");
+        if (hoi == JOptionPane.YES_OPTION) {
+            this.dispose();
+            new Login().setVisible(true);
+        }
     }//GEN-LAST:event_btnDangxuatActionPerformed
 
     /**
      * @param args the command line arguments
      */
     public static void main(String args[]) {
-       
+       // Create an instance of your application's main frame
+    PhanMemQLGiay mainFrame = new PhanMemQLGiay();
+    // Set the frame visible
+    mainFrame.setVisible(true);
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
