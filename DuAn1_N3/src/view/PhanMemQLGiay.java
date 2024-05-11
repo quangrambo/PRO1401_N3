@@ -247,9 +247,8 @@ public class PhanMemQLGiay extends javax.swing.JFrame {
         jPanel3.setBackground(new java.awt.Color(255, 255, 255));
         jPanel3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 102, 255)));
 
-        btnSanPham.setBackground(new java.awt.Color(255, 0, 51));
+        btnSanPham.setBackground(new java.awt.Color(0, 204, 51));
         btnSanPham.setFont(new java.awt.Font("SansSerif", 1, 16)); // NOI18N
-        btnSanPham.setForeground(new java.awt.Color(255, 255, 255));
         btnSanPham.setText("Sản Phẩm");
         btnSanPham.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -257,9 +256,8 @@ public class PhanMemQLGiay extends javax.swing.JFrame {
             }
         });
 
-        btnHoaDon.setBackground(new java.awt.Color(255, 0, 51));
+        btnHoaDon.setBackground(new java.awt.Color(0, 204, 51));
         btnHoaDon.setFont(new java.awt.Font("SansSerif", 1, 16)); // NOI18N
-        btnHoaDon.setForeground(new java.awt.Color(255, 255, 255));
         btnHoaDon.setText("Hóa Đơn");
         btnHoaDon.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -267,9 +265,8 @@ public class PhanMemQLGiay extends javax.swing.JFrame {
             }
         });
 
-        btnKhachHang.setBackground(new java.awt.Color(255, 0, 51));
+        btnKhachHang.setBackground(new java.awt.Color(0, 204, 51));
         btnKhachHang.setFont(new java.awt.Font("SansSerif", 1, 16)); // NOI18N
-        btnKhachHang.setForeground(new java.awt.Color(255, 255, 255));
         btnKhachHang.setText("Khách Hàng");
         btnKhachHang.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -277,9 +274,8 @@ public class PhanMemQLGiay extends javax.swing.JFrame {
             }
         });
 
-        btnHeThong.setBackground(new java.awt.Color(255, 0, 51));
+        btnHeThong.setBackground(new java.awt.Color(0, 204, 51));
         btnHeThong.setFont(new java.awt.Font("SansSerif", 1, 16)); // NOI18N
-        btnHeThong.setForeground(new java.awt.Color(255, 255, 255));
         btnHeThong.setText("Hệ Thống");
         btnHeThong.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -287,9 +283,8 @@ public class PhanMemQLGiay extends javax.swing.JFrame {
             }
         });
 
-        btnThongKe.setBackground(new java.awt.Color(255, 0, 51));
+        btnThongKe.setBackground(new java.awt.Color(0, 204, 51));
         btnThongKe.setFont(new java.awt.Font("SansSerif", 1, 16)); // NOI18N
-        btnThongKe.setForeground(new java.awt.Color(255, 255, 255));
         btnThongKe.setText("Thống Kê");
         btnThongKe.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -297,9 +292,8 @@ public class PhanMemQLGiay extends javax.swing.JFrame {
             }
         });
 
-        btnBanHang.setBackground(new java.awt.Color(255, 0, 51));
+        btnBanHang.setBackground(new java.awt.Color(0, 204, 51));
         btnBanHang.setFont(new java.awt.Font("SansSerif", 1, 16)); // NOI18N
-        btnBanHang.setForeground(new java.awt.Color(255, 255, 255));
         btnBanHang.setText("Bán Hàng");
         btnBanHang.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -310,9 +304,8 @@ public class PhanMemQLGiay extends javax.swing.JFrame {
         jlbTenNhanVien.setFont(new java.awt.Font("SansSerif", 1, 13)); // NOI18N
         jlbTenNhanVien.setText("Tên nhân viên");
 
-        btnDangxuat.setBackground(new java.awt.Color(255, 0, 51));
+        btnDangxuat.setBackground(new java.awt.Color(0, 204, 51));
         btnDangxuat.setFont(new java.awt.Font("SansSerif", 1, 13)); // NOI18N
-        btnDangxuat.setForeground(new java.awt.Color(255, 255, 255));
         btnDangxuat.setText("Đăng xuất");
         btnDangxuat.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -320,9 +313,8 @@ public class PhanMemQLGiay extends javax.swing.JFrame {
             }
         });
 
-        btnThoat.setBackground(new java.awt.Color(255, 0, 51));
+        btnThoat.setBackground(new java.awt.Color(0, 204, 51));
         btnThoat.setFont(new java.awt.Font("SansSerif", 1, 13)); // NOI18N
-        btnThoat.setForeground(new java.awt.Color(255, 255, 255));
         btnThoat.setText("Thoát");
         btnThoat.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

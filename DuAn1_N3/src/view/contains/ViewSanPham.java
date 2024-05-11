@@ -61,13 +61,12 @@ public class ViewSanPham extends javax.swing.JPanel {
         txtMa = new javax.swing.JTextField();
         txtMaVach = new javax.swing.JTextField();
         txtMoT = new javax.swing.JTextField();
-        txtSoLuong = new javax.swing.JTextField();
+        txtTenSanPham = new javax.swing.JTextField();
         txtGiaNhap = new javax.swing.JTextField();
         ckbTrangThai = new javax.swing.JCheckBox();
         jLabel6 = new javax.swing.JLabel();
-        cboLoaiSanPham = new javax.swing.JComboBox<>();
-        btnTenSanPham = new javax.swing.JButton();
         txtGiaBan = new javax.swing.JTextField();
+        txtSoLuong = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
@@ -343,8 +342,8 @@ public class ViewSanPham extends javax.swing.JPanel {
         txtMoT.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         txtMoT.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 2, 0, new java.awt.Color(0, 0, 0)));
 
-        txtSoLuong.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        txtSoLuong.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 2, 0, new java.awt.Color(0, 0, 0)));
+        txtTenSanPham.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        txtTenSanPham.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 2, 0, new java.awt.Color(0, 0, 0)));
 
         txtGiaNhap.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         txtGiaNhap.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 2, 0, new java.awt.Color(0, 0, 0)));
@@ -355,29 +354,11 @@ public class ViewSanPham extends javax.swing.JPanel {
         jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel6.setText("Tên Sản Phẩm:");
 
-        cboLoaiSanPham.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        cboLoaiSanPham.setForeground(new java.awt.Color(51, 51, 51));
-        cboLoaiSanPham.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                cboLoaiSanPhamMouseClicked(evt);
-            }
-        });
-        cboLoaiSanPham.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cboLoaiSanPhamActionPerformed(evt);
-            }
-        });
-
-        btnTenSanPham.setBackground(new java.awt.Color(0, 0, 0));
-        btnTenSanPham.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/add.png"))); // NOI18N
-        btnTenSanPham.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnTenSanPhamActionPerformed(evt);
-            }
-        });
-
         txtGiaBan.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         txtGiaBan.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 2, 0, new java.awt.Color(0, 0, 0)));
+
+        txtSoLuong.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        txtSoLuong.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 2, 0, new java.awt.Color(0, 0, 0)));
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -393,14 +374,11 @@ public class ViewSanPham extends javax.swing.JPanel {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(ckbTrangThai, javax.swing.GroupLayout.PREFERRED_SIZE, 201, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(jPanel3Layout.createSequentialGroup()
-                                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(txtGiaNhap)
-                                    .addComponent(txtSoLuong)
-                                    .addComponent(cboLoaiSanPham, 0, 206, Short.MAX_VALUE)
-                                    .addComponent(txtGiaBan, javax.swing.GroupLayout.Alignment.TRAILING))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(btnTenSanPham, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addComponent(txtGiaNhap, javax.swing.GroupLayout.DEFAULT_SIZE, 206, Short.MAX_VALUE)
+                                .addComponent(txtTenSanPham)
+                                .addComponent(txtGiaBan, javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addComponent(txtSoLuong, javax.swing.GroupLayout.Alignment.TRAILING))))
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel13)
@@ -416,7 +394,7 @@ public class ViewSanPham extends javax.swing.JPanel {
                         .addComponent(txtMoT, javax.swing.GroupLayout.PREFERRED_SIZE, 201, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jLabel17)
                     .addComponent(jLabel15))
-                .addGap(33, 33, 33))
+                .addGap(75, 75, 75))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -429,16 +407,14 @@ public class ViewSanPham extends javax.swing.JPanel {
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel13)
                     .addComponent(txtMaVach, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(39, 39, 39)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jLabel6)
-                        .addComponent(cboLoaiSanPham, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(btnTenSanPham, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(41, 41, 41)
+                .addGap(42, 42, 42)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtSoLuong, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel15))
+                    .addComponent(jLabel6)
+                    .addComponent(txtTenSanPham, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(45, 45, 45)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel15)
+                    .addComponent(txtSoLuong, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(39, 39, 39)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel16)
@@ -913,25 +889,6 @@ public class ViewSanPham extends javax.swing.JPanel {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtMaVachActionPerformed
 
-    private void cboLoaiSanPhamMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cboLoaiSanPhamMouseClicked
-
-    }//GEN-LAST:event_cboLoaiSanPhamMouseClicked
-
-    private void cboLoaiSanPhamActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cboLoaiSanPhamActionPerformed
-        //        listCboKC.removeAll(listCboKC);
-        //        cboKichCo.removeAllItems();
-        //        for (KichCoViewModel kc : listKC) {
-            //            if (cboLoaiSanPham.getSelectedItem().equals(kc.getLoaiSanPham())) {
-                //                listCboKC.add(kc.getKichCo());
-                //            }
-            //        }
-        //        showDataCBO(listCboKC, dcbKC);
-    }//GEN-LAST:event_cboLoaiSanPhamActionPerformed
-
-    private void btnTenSanPhamActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTenSanPhamActionPerformed
-
-    }//GEN-LAST:event_btnTenSanPhamActionPerformed
-
     private void btnThemSanPhamActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnThemSanPhamActionPerformed
 
     }//GEN-LAST:event_btnThemSanPhamActionPerformed
@@ -1012,7 +969,6 @@ public class ViewSanPham extends javax.swing.JPanel {
     private javax.swing.JButton btnLuuDanhSach;
     private javax.swing.JButton btnMauSac;
     private javax.swing.JButton btnSuaThongTinSp;
-    private javax.swing.JButton btnTenSanPham;
     private javax.swing.JButton btnThemSanPham;
     private javax.swing.JButton btnThuongHieu;
     private javax.swing.JButton btnTien;
@@ -1025,7 +981,6 @@ public class ViewSanPham extends javax.swing.JPanel {
     private javax.swing.JComboBox<String> cboChatLieu;
     private javax.swing.JComboBox<String> cboKichCo;
     private javax.swing.JComboBox<String> cboLTT;
-    private javax.swing.JComboBox<String> cboLoaiSanPham;
     private javax.swing.JComboBox<String> cboMauSac;
     private javax.swing.JComboBox<String> cboThuongHIeu;
     private javax.swing.JCheckBox ckbTrangThai;
@@ -1072,5 +1027,6 @@ public class ViewSanPham extends javax.swing.JPanel {
     private javax.swing.JTextField txtMoT;
     private javax.swing.JTextField txtSearchTen;
     private javax.swing.JTextField txtSoLuong;
+    private javax.swing.JTextField txtTenSanPham;
     // End of variables declaration//GEN-END:variables
 }
