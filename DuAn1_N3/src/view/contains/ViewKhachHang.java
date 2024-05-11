@@ -249,6 +249,9 @@ public class ViewKhachHang extends javax.swing.JPanel {
                     .addComponent(btnThem))
                 .addGap(62, 62, 62))
         );
+
+        jPanel4Layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {btnClearForm, btnSua, btnThem});
+
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
@@ -260,6 +263,8 @@ public class ViewKhachHang extends javax.swing.JPanel {
                 .addComponent(btnClearForm, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
+
+        jPanel4Layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {btnClearForm, btnSua, btnThem});
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setBorder(javax.swing.BorderFactory.createMatteBorder(2, 2, 2, 2, new java.awt.Color(0, 0, 0)));
@@ -330,7 +335,7 @@ public class ViewKhachHang extends javax.swing.JPanel {
         btnHoanTac.setFont(new java.awt.Font("SansSerif", 1, 12)); // NOI18N
         btnHoanTac.setForeground(new java.awt.Color(255, 255, 255));
         btnHoanTac.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/search (1).png"))); // NOI18N
-        btnHoanTac.setText("Hoàn tác");
+        btnHoanTac.setText("Clear");
         btnHoanTac.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnHoanTacActionPerformed(evt);

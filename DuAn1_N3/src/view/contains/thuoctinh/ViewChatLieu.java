@@ -39,7 +39,6 @@ public class ViewChatLieu extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 255, 51));
         jLabel1.setText("Chất Liệu");
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
